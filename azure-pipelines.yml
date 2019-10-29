@@ -22,7 +22,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Free Trial(1)(7d9e6de1-f750-4c61-a396-81e5fb0e4d91)'
+    azureSubscription: 'Free Trial(7d9e6de1-f750-4c61-a396-81e5fb0e4d91)'
     appType: 'webApp'
     appName: 
     package: '$(System.DefaultWorkingDirectory)/dist/'
