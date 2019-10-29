@@ -1,0 +1,16 @@
+{
+  "name": "azure-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc main.ts module1.ts && browserify main.js -o dist/bundle.js && cp index.html dist/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "typescript": "^3.6.4"
+  }
+}
