@@ -19,10 +19,11 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureRmWebAppDeployment@4
+
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Free Trial(7d9e6de1-f750-4c61-a396-81e5fb0e4d91)'
+    azureSubscription: 'Free Trial(1)(7d9e6de1-f750-4c61-a396-81e5fb0e4d91)'
     appType: 'webApp'
-    WebAppName: 'test'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/dist/'
+    appName: 
+    package: '$(System.DefaultWorkingDirectory)/dist/'
+    deploymentMethod: 'auto'
